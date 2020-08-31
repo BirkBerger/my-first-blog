@@ -27,12 +27,13 @@
 
     <div>
         <h2>Blog posts:</h2>
+        <br>
     </div>
 
     {% for post in posts %}
     <div>
         <h3>published: {{ post.published_date }}</h3>
-        <h2>title: {{ post.title }}</h2>
+        <h4>title: {{ post.title }}</h4>
         <h4>author: {{ post.author }}</h4>
         <p>
             {{ post.text|linebreaksbr }}
