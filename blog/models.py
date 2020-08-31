@@ -26,3 +26,12 @@ class Post(models.Model):       # models.Model: We define Post in our database a
 # When you're happy with the changes, you will place a copy of your program on GitHub.
 # Your website will be on PythonAnywhere
 # and you will update it by getting a new copy of your code from GitHub.
+
+# Deploying a web app on PythonAnywhere involves pulling down your code from GitHub,
+# and then configuring PythonAnywhere to recognise it
+# and start serving it as a web application.
+
+# The workflow in web development:
+# 1) make changes locally,
+# 2) push those changes to GitHub
+# 3) pull your changes down to your live Web server (PythonAnywhere)
