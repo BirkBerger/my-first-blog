@@ -7,7 +7,7 @@ urlpatterns = [
     # then view.post_list is shown in the browser
     path('', views.post_list, name='post_list'),
     # add url to the post_detail link. post_datail is a view
-    path('post/<int:pk>/', views.post_detail, name='post_detail')
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 
 
