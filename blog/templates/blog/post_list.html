@@ -13,7 +13,7 @@
             {% if post.published_date %}
                 <h3>published: {{ post.published_date }}</h3>
             {% endif %}
-            <h4><a href="{% url 'urls/post_detail' pk=post.pk %}"> title: {{ post.title }}</a></h4>
+            <h4><a href="{% url 'post_detail' pk=post.pk %}"> title: {{ post.title }}</a></h4>
             <h4>author: {{ post.author }}</h4>
         {% endfor %}
     </div>
