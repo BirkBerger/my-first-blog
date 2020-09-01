@@ -36,16 +36,14 @@
             <h2>log posts:</h2>
         </div>
 
-        {% for post in posts %}
         <div class="post">
-            <h3>published: {{ post.published_date }}</h3>
-            <h4>title: {{ post.title }}</h4>
-            <h4>author: {{ post.author }}</h4>
-            <p>
-                {{ post.text|linebreaksbr }}
-            </p>
+            {% for post in posts %}
+                <h3>published: {{ post.published_date }}</h3>
+                <h4>title: {{ post.title }}</h4>
+                <h4>author: {{ post.author }}</h4>
+                <p> {{ post.text|linebreaksbr }} </p>
+            {% endfor %}
         </div>
-        {% endfor %}
 
     </body>
 </html>
