@@ -1,5 +1,4 @@
-from django.shortcuts import render
-from django.utils import timezone
+from django.shortcuts import render, get_object_or_404
 from .models import Post                # we decide to display the Post model
 
 # A view...
@@ -15,6 +14,10 @@ def post_list(request):
     # render/put together the template 'blog/post_list.html'
     # create HTML tag for the posts object and call it "posts" (green below)
     return render(request, 'blog/post_list.html', {'posts': posts})
+
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
 
 # Each HTML is divided into two elements:
 # <head> (information about the document that is not displayed on the screen)

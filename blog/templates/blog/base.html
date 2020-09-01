@@ -15,7 +15,7 @@
         </div>
 
         <br>
-        <div>
+        <div class="paragraph">
             <p>This is a paragraph</p>
             <p><em>This paragraph has italic text</em></p>
             <p><strong>This paragraph has bold text</strong></p>
@@ -30,15 +30,8 @@
             </ul>
         </div>
 
-        <div>
-            <br>
-            <h2>log posts:</h2>
-        </div>
-
-        <div class="post">
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
 
     </body>
 </html>

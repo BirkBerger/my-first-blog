@@ -6,18 +6,29 @@
 
 .page-header h1 {
     color: #ffffff;
+    font-family: 'Lobster', serif;
     font-size: 36pt;
     text-decoration: none;
 }
 
+.paragraph {
+    padding-left: 40px;
+}
+
 .post {
-    padding-left: 15px;
+    color: #4f4f4f;
+    padding-left: 40px;
+}
+
+.post_content {
+    padding-left: 50px;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    padding-left: 20px;
+    font-family: 'Lobster', fantasy;
 }
 
 li a {
-    color: #5E5694;
+    color: #C25100;
 }
