@@ -1,0 +1,44 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>OH MY</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">    </head>
+    <body>
+
+        <div class="page-header">
+            <h1>OH MY</h1>
+            <h3>A website brought to you by BERGER PRODUCTIONS</h3>
+        </div>
+
+        <br>
+        <div>
+            <p>This is a paragraph</p>
+            <p><em>This paragraph has italic text</em></p>
+            <p><strong>This paragraph has bold text</strong></p>
+        </div>
+
+        <br>
+        <div>
+            <h4>Useful websites</h4>
+            <ul>
+                <li><a href="https://www.instagram.com/birkberger/">My instagram account</a></li>
+                <li><a href="https://www.facebook.com/thea.b.berger/">My facebook page</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <br>
+            <h2>log posts:</h2>
+        </div>
+
+        <div class="post">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </body>
+</html>
