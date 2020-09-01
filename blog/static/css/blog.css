@@ -1,8 +1,15 @@
-h1 a, h2 a, h3 a {
-    color: #F25100;
-    font-family: 'Lobster', fantasy;
+.page-header {
+    background-color: #C25100;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
 }
 
-body {
-    padding-left: 15px;
+.page-header h1 {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', fantasy;
 }
