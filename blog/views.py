@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_object_or_404
 from .models import Post                # we decide to display the Post model
+from django.shortcuts import render, get_object_or_404
 
 # A view...
 # takes a Web request and returns a Web response
